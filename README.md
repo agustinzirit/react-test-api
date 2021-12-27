@@ -11,11 +11,16 @@ Una vez instalados los paquetes, ejecutar la siguiente instrucción
 npm run dev
 ```
 
-La instrucción previamente mencionada, ya está configurada para ser ejecutada con webpack.
+Para realizar las pruebas, puede ejecutar
+```bash
+npm test
+```
+
+La instrucción previamente mencionada, ya está configurada para ser ejecutada con Mocha.
 
 ## ¿En que consiste la aplicación?
 
-Una vez introducido un valor o cadena en la caja de texto, puedes darle enter al mismo o clickear el botón Search para buscar resultado en el API, el cual, en el caso que haya un texto a evaluar, el API retornará un resultado en formato JSON de la siguiente manera:
+El API espera un valor que es enviado por el front-end, el cual, en el caso que sea un valor valido, el endpoint respondera con:
 ```bash
 {
   "text": "radar",
@@ -30,11 +35,10 @@ En el caso que no haya introducido un valor en la caja de texto, el API responde
   "palindrome": false
 }
 ```
-A nivel visual, el resultado se presentará al usuario de forma mas amigable.
 
 ## Frameworks y paquetes utilizados.
-- NodeJS 12
-- Webpack
-- Bootstrap
-- React
-- Redux
+- NodeJs 12
+- ExpressJs
+- Mocha
+- Chai
+- SuperTest
