@@ -1,6 +1,7 @@
+
 # react-test-front
 
-Instalacion de paquetes:
+Instalacion de paquetes: 
 
 ```bash
 npm install
@@ -11,16 +12,11 @@ Una vez instalados los paquetes, ejecutar la siguiente instrucción
 npm run dev
 ```
 
-Para realizar las pruebas, puede ejecutar
-```bash
-npm test
-```
-
-La instrucción previamente mencionada, ya está configurada para ser ejecutada con Mocha.
+La instrucción previamente mencionada, ya está configurada para ser ejecutada con webpack.
 
 ## ¿En que consiste la aplicación?
 
-El API espera un valor que es enviado por el front-end, el cual, en el caso que sea un valor valido, el endpoint respondera con:
+Una vez introducido un valor o cadena en la caja de texto, puedes darle enter al mismo o clickear el botón Search para buscar resultado en el API, el cual, en el caso que haya un texto a evaluar, el API retornará un resultado en formato JSON de la siguiente manera: 
 ```bash
 {
   "text": "radar",
@@ -28,17 +24,18 @@ El API espera un valor que es enviado por el front-end, el cual, en el caso que 
 }
 ```
 
-En el caso que no haya introducido un valor en la caja de texto, el API respondera con un JSON con el formato:
+En el caso que no haya introducido un valor en la caja de texto, el API respondera con un JSON con el formato: 
 ```bash
 {
   "error": "No text",
   "palindrome": false
 }
 ```
+A nivel visual, el resultado se presentará al usuario de forma mas amigable.
 
 ## Frameworks y paquetes utilizados.
-- NodeJs 12
-- ExpressJs
-- Mocha
-- Chai
-- SuperTest
+- NodeJS 12
+- Webpack
+- Bootstrap
+- React
+- Redux
