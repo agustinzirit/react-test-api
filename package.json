@@ -1,0 +1,24 @@
+{
+  "name": "react-project-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha src/tests/query.test.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "chai": "^4.3.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "mocha": "^9.1.3",
+    "standard": "^16.0.4",
+    "supertest": "^6.1.6"
+  }
+}
